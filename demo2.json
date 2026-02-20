@@ -312,6 +312,7 @@
           1,
           1,
           1,
+          0.7322834645669292,
           1,
           1,
           1,
@@ -328,8 +329,7 @@
           1,
           1,
           1,
-          1,
-          1,
+          0.4015748031496063,
           1,
           1,
           1,
@@ -16686,6 +16686,18 @@
     0,
     0
   ],
+  "soundIndex": {
+    "bass": 0,
+    "lead": 0,
+    "pad": 0,
+    "arp": 0
+  },
+  "skin": {
+    "synthBody": "#2a2a4e",
+    "skyboxUrl": "https://raw.githubusercontent.com/pixelblip/vrsequencer/main/northcliff_1k.jpeg"
+  },
+  "skyboxEnabled": true,
+  "currentSkyboxIndex": 10,
   "trackVolumes": [
     0.8,
     1,
@@ -16711,5 +16723,67 @@
     0,
     0,
     0
-  ]
+  ],
+  "masterVolume": 0.85,
+  "trackDecay": [
+    1,
+    1,
+    1,
+    1,
+    0.10000000000000014
+  ],
+  "arp": {
+    "pattern": 0,
+    "enabled": false,
+    "currentArpIndex": 0,
+    "mode": 0,
+    "randomInversions": false,
+    "strumPattern": 0,
+    "timeSubdivision": 2
+  },
+  "echoEnabled": false,
+  "echoTimingIndex": 2,
+  "workstationPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "workstationRotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "tapeState": {
+    "deck1": {
+      "playing": false,
+      "recording": false,
+      "recordArmed": false,
+      "ff": false,
+      "rw": false,
+      "doorOpen": false,
+      "tapeLoaded": true,
+      "shelfSlotId": 8,
+      "tapeColor": "#c44a7e",
+      "counter": 0,
+      "counterTarget": 0
+    },
+    "deck2": {
+      "playing": false,
+      "recording": false,
+      "recordArmed": false,
+      "ff": false,
+      "rw": false,
+      "doorOpen": false,
+      "tapeLoaded": true,
+      "shelfSlotId": 9,
+      "tapeColor": "#4ac46a",
+      "counter": 0,
+      "counterTarget": 0
+    },
+    "bounce": false,
+    "seqToTape": false,
+    "radio": false,
+    "browser": false
+  },
+  "tapeMetadata": {}
 }
