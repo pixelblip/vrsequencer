@@ -209,24 +209,18 @@
       <a-entity id="globalUndo" position="-1.48 0.14 0.05"></a-entity>
       <a-entity id="demoButton" position="-1.48 0.02 0.05"></a-entity>
       <a-entity id="masterVolContainer" position="-1.75 -0.22 0.05"></a-entity>
-      <!-- Left Speaker - Realistic Concentric Rings -->
-      <a-entity id="leftSpeaker" position="-1.80 0.10 -0.05">
+      <!-- Left Speaker - plastic cone/surround; rainbow smoke rings pump out (speaker-smoke-rings) -->
+      <a-entity id="leftSpeaker" position="-1.80 0.10 -0.05" speaker-smoke-rings>
         <!-- Speaker box -->
         <a-box width="0.25" height="0.25" depth="0.25" color="#1a1a2a" material="metalness:0.65;roughness:0.35;emissive:#151528;emissiveIntensity:0.18" shadow="cast:true;receive:true"></a-box>
-        <!-- Outer rim - dark gray -->
-        <a-ring id="leftSpeakerRim" radius-inner="0.10" radius-outer="0.115" position="0 0 0.126" color="#2a2a3a" material="metalness:0.7;roughness:0.3;side:double"></a-ring>
-        <!-- Ring 1 - outer -->
-        <a-ring id="leftSpeakerRing1" radius-inner="0.088" radius-outer="0.098" position="0 0 0.127" color="#3a3a4a" material="metalness:0.6;roughness:0.4;side:double"></a-ring>
-        <!-- Ring 2 -->
-        <a-ring id="leftSpeakerRing2" radius-inner="0.076" radius-outer="0.086" position="0 0 0.128" color="#4a4a5a" material="metalness:0.5;roughness:0.5;side:double"></a-ring>
-        <!-- Ring 3 -->
-        <a-ring id="leftSpeakerRing3" radius-inner="0.064" radius-outer="0.074" position="0 0 0.129" color="#5a5a6a" material="metalness:0.4;roughness:0.6;side:double"></a-ring>
-        <!-- Ring 4 -->
-        <a-ring id="leftSpeakerRing4" radius-inner="0.052" radius-outer="0.062" position="0 0 0.130" color="#6a6a7a" material="metalness:0.3;roughness:0.7;side:double"></a-ring>
-        <!-- Ring 5 - inner -->
-        <a-ring id="leftSpeakerRing5" radius-inner="0.040" radius-outer="0.050" position="0 0 0.131" color="#7a7a8a" material="metalness:0.2;roughness:0.8;side:double"></a-ring>
-        <!-- Center dome - purple glow -->
-        <a-circle id="leftSpeakerDome" radius="0.038" position="0 0 0.132" color="#ff00e5" material="metalness:0.8;roughness:0.15;emissive:#ff00e5;emissiveIntensity:2.2;side:double"></a-circle>
+        <!-- Cone/surround - plastic (visible grey) -->
+        <a-ring id="leftSpeakerRim" radius-inner="0.10" radius-outer="0.115" position="0 0 0.126" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="leftSpeakerRing1" radius-inner="0.088" radius-outer="0.098" position="0 0 0.127" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="leftSpeakerRing2" radius-inner="0.076" radius-outer="0.086" position="0 0 0.128" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="leftSpeakerRing3" radius-inner="0.064" radius-outer="0.074" position="0 0 0.129" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="leftSpeakerRing4" radius-inner="0.052" radius-outer="0.062" position="0 0 0.130" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="leftSpeakerRing5" radius-inner="0.040" radius-outer="0.050" position="0 0 0.131" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-circle id="leftSpeakerDome" radius="0.038" position="0 0 0.132" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-circle>
       </a-entity>
       <!-- Tape and Light Harp buttons along bottom; copy/paste bar below -->
       <a-entity id="tapeButton" position="-1.82 -0.82 0.05"></a-entity>
@@ -234,32 +228,26 @@
       <a-entity id="copyPasteBar" position="0 -0.92 0.05"></a-entity>
       <!-- Light Harp beams (built by buildLightHarp(), visible when state.lightHarpOn); rotation X tips harp forward -->
       <a-entity id="lightHarpContainer" position="-0.20 0 0" rotation="18 0 0" visible="false" light-harp-hand-trigger></a-entity>
-      <!-- Right Speaker - Realistic Concentric Rings -->
-      <a-entity id="rightSpeaker" position="1.45 0.10 -0.05">
+      <!-- Right Speaker - plastic cone/surround; rainbow smoke rings pump out (speaker-smoke-rings) -->
+      <a-entity id="rightSpeaker" position="1.45 0.10 -0.05" speaker-smoke-rings>
         <!-- Speaker box -->
         <a-box width="0.25" height="0.25" depth="0.25" color="#1a1a2a" material="metalness:0.65;roughness:0.35;emissive:#151528;emissiveIntensity:0.18" shadow="cast:true;receive:true"></a-box>
-        <!-- Outer rim - dark gray -->
-        <a-ring id="rightSpeakerRim" radius-inner="0.10" radius-outer="0.115" position="0 0 0.126" color="#2a2a3a" material="metalness:0.7;roughness:0.3;side:double"></a-ring>
-        <!-- Ring 1 - outer -->
-        <a-ring id="rightSpeakerRing1" radius-inner="0.088" radius-outer="0.098" position="0 0 0.127" color="#3a3a4a" material="metalness:0.6;roughness:0.4;side:double"></a-ring>
-        <!-- Ring 2 -->
-        <a-ring id="rightSpeakerRing2" radius-inner="0.076" radius-outer="0.086" position="0 0 0.128" color="#4a4a5a" material="metalness:0.5;roughness:0.5;side:double"></a-ring>
-        <!-- Ring 3 -->
-        <a-ring id="rightSpeakerRing3" radius-inner="0.064" radius-outer="0.074" position="0 0 0.129" color="#5a5a6a" material="metalness:0.4;roughness:0.6;side:double"></a-ring>
-        <!-- Ring 4 -->
-        <a-ring id="rightSpeakerRing4" radius-inner="0.052" radius-outer="0.062" position="0 0 0.130" color="#6a6a7a" material="metalness:0.3;roughness:0.7;side:double"></a-ring>
-        <!-- Ring 5 - inner -->
-        <a-ring id="rightSpeakerRing5" radius-inner="0.040" radius-outer="0.050" position="0 0 0.131" color="#7a7a8a" material="metalness:0.2;roughness:0.8;side:double"></a-ring>
-        <!-- Center dome - cyan glow -->
-        <a-circle id="rightSpeakerDome" radius="0.038" position="0 0 0.132" color="#00f5ff" material="metalness:0.8;roughness:0.15;emissive:#00f5ff;emissiveIntensity:2.2;side:double"></a-circle>
+        <!-- Cone/surround - plastic (visible grey) -->
+        <a-ring id="rightSpeakerRim" radius-inner="0.10" radius-outer="0.115" position="0 0 0.126" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="rightSpeakerRing1" radius-inner="0.088" radius-outer="0.098" position="0 0 0.127" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="rightSpeakerRing2" radius-inner="0.076" radius-outer="0.086" position="0 0 0.128" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="rightSpeakerRing3" radius-inner="0.064" radius-outer="0.074" position="0 0 0.129" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="rightSpeakerRing4" radius-inner="0.052" radius-outer="0.062" position="0 0 0.130" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-ring id="rightSpeakerRing5" radius-inner="0.040" radius-outer="0.050" position="0 0 0.131" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-ring>
+        <a-circle id="rightSpeakerDome" radius="0.038" position="0 0 0.132" color="#4a4a58" material="metalness:0.12;roughness:0.58;side:double"></a-circle>
       </a-entity>
-      <a-entity id="bpmButtons" position="0.78 0.08 0.05"></a-entity>
+      <a-entity id="bpmButtons" position="0.68 0.08 0.05"></a-entity>
       <a-entity id="patternButtons" position="1.2 -0.45 0.05"></a-entity>
       <a-entity id="viewButtons" position="0 0 0"></a-entity>
       <a-entity id="octaveButtons" position="1.20 -0.72 0.05"></a-entity>
       <a-entity id="oscilloscope" position="-0.13 -0.20 0.05"></a-entity>
       <a-text id="buttonFunctionDisplay" position="-0.14 -0.90 0.06" value="" align="center" color="#ffffff" width="2.4" scale="0.52 0.52 0.5"></a-text>
-  <a-text id="infoDisplay" position="-0.1 -0.05 0.06" value="" align="center" color="#00f5ff" width="6.0" scale="0.35 0.35 0.35"></a-text>
+  <a-text id="infoDisplay" position="-0.1 -0.14 0.06" value="" align="center" color="#00f5ff" width="6.0" scale="0.35 0.35 0.35"></a-text>
     <a-entity id="stepButtons" position="0 -0.65 0.05"></a-entity>
       <a-entity id="transport" position="-1.75 -0.39 0.05"></a-entity>
       <a-entity id="leftButtons" position="-1.30 -0.55 0.05"></a-entity>
@@ -551,6 +539,7 @@ const state = {
   chorusTrack: 0, // 0 = none, 1-4 = track number
   tapeMode: false,
   lightHarpOn: false,
+  speakerSmokeRingsOn: false,  // Enviro: rainbow smoke rings from speakers when playing (off by default)
   chordOn: false,  // when true, play 3-note chord with arp at 50% following bassline
   drumReduceOn: false,  // when true, play drums as 1 voice (snare > kick > hihat priority) to save channels
   chordLineArpOn: false,  // when true (and Reduce on), play arpeggio from chord sequencer on arp track
@@ -890,6 +879,10 @@ function startMode(mode) {
   void scene.offsetHeight;
   window.dispatchEvent(new Event('resize'));
   if (typeof scene.resize === 'function') scene.resize();
+  // Pick random skybox and turn on skyboxes when starting the synth
+  if (typeof setRandomSkyboxOnLoad === 'function') setRandomSkyboxOnLoad();
+  state.skyboxEnabled = true;
+  if (typeof applySkybox === 'function') applySkybox();
 
   if (mode === 'vr') {
     rig.setAttribute('position', '0 1 0.1');
@@ -3079,51 +3072,29 @@ function animateSpeakers() {
   const leftOriginal = [0.126, 0.127, 0.128, 0.129, 0.130, 0.131, 0.132];
   const rightOriginal = [0.126, 0.127, 0.128, 0.129, 0.130, 0.131, 0.132];
  
-  // Pump all rings forward
+  // Pump all rings forward (cone interior stays darker grey)
   leftElements.forEach((id, i) => {
     const el = document.getElementById(id);
     if (el) {
       const newZ = leftOriginal[i] + 0.015;
       el.setAttribute('position', `0 0 ${newZ}`);
-      // Brighten dome glow - neon magenta
-      if (id === 'leftSpeakerDome') {
-        el.setAttribute('material', 'metalness:0.8;roughness:0.15;emissive:#ff00e5;emissiveIntensity:3.2;side:double');
-      }
     }
   });
- 
   rightElements.forEach((id, i) => {
     const el = document.getElementById(id);
     if (el) {
       const newZ = rightOriginal[i] + 0.015;
       el.setAttribute('position', `0 0 ${newZ}`);
-      // Brighten dome glow - neon cyan
-      if (id === 'rightSpeakerDome') {
-        el.setAttribute('material', 'metalness:0.8;roughness:0.15;emissive:#00f5ff;emissiveIntensity:3.2;side:double');
-      }
     }
   });
- 
-  // Return to normal after 100ms
   setTimeout(() => {
     leftElements.forEach((id, i) => {
       const el = document.getElementById(id);
-      if (el) {
-        el.setAttribute('position', `0 0 ${leftOriginal[i]}`);
-        if (id === 'leftSpeakerDome') {
-          el.setAttribute('material', 'metalness:0.8;roughness:0.15;emissive:#ff00e5;emissiveIntensity:2.2;side:double');
-        }
-      }
+      if (el) el.setAttribute('position', `0 0 ${leftOriginal[i]}`);
     });
-   
     rightElements.forEach((id, i) => {
       const el = document.getElementById(id);
-      if (el) {
-        el.setAttribute('position', `0 0 ${rightOriginal[i]}`);
-        if (id === 'rightSpeakerDome') {
-          el.setAttribute('material', 'metalness:0.8;roughness:0.15;emissive:#00f5ff;emissiveIntensity:2.2;side:double');
-        }
-      }
+      if (el) el.setAttribute('position', `0 0 ${rightOriginal[i]}`);
     });
   }, 100);
 }
@@ -5595,10 +5566,12 @@ function updateSteps() {
     btn.setAttribute('material', 'metalness:0.5;roughness:0.5;emissive:#000000;emissiveIntensity:0');
     btn.setAttribute('scale', '1 1 1');
   }
-  // Dark text on lit step buttons (so tick/updateSteps cannot overwrite with white)
+  // Dark text on lit step buttons; on ARP track (bright cyan) use dark text for all steps so labels stay readable
   if (label) {
     const isStepLit = !beyondLength && (state.isPlaying && step === state.currentStep || step === state.highlightedStep || hasNote);
-    label.setAttribute('color', isStepLit ? '#000000' : '#ffffff');
+    const onArpTrack = state.displayTrack === 7;
+    const stepLabelColor = (onArpTrack || isStepLit) ? '#000000' : '#ffffff';
+    label.setAttribute('color', stepLabelColor);
   }
   // Update step number label under each button (1-16, 17-32, 33-48, 49-64)
   if (ui.stepNumberLabels && ui.stepNumberLabels[i]) {
@@ -6013,12 +5986,16 @@ function buildUI() {
     leftButtons.forEach(function (b) {
       const el = createButton(leftGroup, lx, 0, 0, bw, bh, bd, b.color, b.id, b.label, 'white', true);
       el.dataset.tooltip = b.tooltip;
+      var lbl = el.querySelector('a-text');
+      if (lbl) lbl.setAttribute('scale', '0.12 0.12 0.12');
       lx += bw + gap;
     });
     let rx = -0.24;
     rightButtons.forEach(function (b) {
       const el = createButton(rightGroup, rx, 0, 0, bw, bh, bd, b.color, b.id, b.label, 'white', true);
       el.dataset.tooltip = b.tooltip;
+      var lbl = el.querySelector('a-text');
+      if (lbl) lbl.setAttribute('scale', '0.12 0.12 0.12');
       rx += bw + gap;
     });
   }
@@ -6046,7 +6023,7 @@ function buildUI() {
 if (bpmButtons) {
   bpmButtons.innerHTML = '';
   // Position is anchored near trackControls in the scene; this local layout is a vertical stack.
-  bpmButtons.setAttribute('position', '0.78 0.08 0.05');
+  bpmButtons.setAttribute('position', '0.68 0.08 0.05');
   // Top: BPM-
   createButton(bpmButtons, 0.0, 0.08, 0, 0.22, 0.13, 0.08, '#557799', 'bpm-', 'BPM-', 'white', true);
   // Bottom: BPM+
@@ -7170,6 +7147,7 @@ function buildSongSaveData() {
     chordLineTimingIndex: state.chordLineTimingIndex,
     chordLineInversionIndex: state.chordLineInversionIndex,
     miscSection: state.miscSection,
+    speakerSmokeRingsOn: state.speakerSmokeRingsOn,
     midiOutEnabled: state.midiOutEnabled,
     lightingEnabled: state.lightingEnabled,
     tableVisible: state.tableVisible,
@@ -7181,11 +7159,12 @@ function buildSongSaveData() {
   };
 }
 
-// Demo entries shown at top of file list (load from demo1.js/json etc.)
+// Demo entries shown at top of file list (load from demo1.js / demo4.js / etc.)
 var DEMO_FILE_ENTRIES = [
   { id: 'Demo 1', demoNum: 1 },
   { id: 'Demo 2', demoNum: 2 },
-  { id: 'Demo 3', demoNum: 3 }
+  { id: 'Demo 3', demoNum: 3 },
+  { id: 'Demo 4', demoNum: 4 }
 ];
 
 function getSongLibrary() {
@@ -7397,6 +7376,7 @@ function applyLoadedSongData(data) {
   if (typeof data.chordLineTimingIndex === 'number') state.chordLineTimingIndex = Math.max(0, data.chordLineTimingIndex);
   if (typeof data.chordLineInversionIndex === 'number') state.chordLineInversionIndex = Math.max(0, data.chordLineInversionIndex);
   if (data.miscSection === 'enviro' || data.miscSection === 'fx' || data.miscSection === 'general') state.miscSection = data.miscSection;
+  if (typeof data.speakerSmokeRingsOn !== 'undefined') state.speakerSmokeRingsOn = data.speakerSmokeRingsOn;
   if (typeof data.midiOutEnabled !== 'undefined') state.midiOutEnabled = data.midiOutEnabled;
   if (typeof data.lightingEnabled !== 'undefined') state.lightingEnabled = data.lightingEnabled;
   if (typeof data.tableVisible !== 'undefined') state.tableVisible = data.tableVisible;
@@ -8176,6 +8156,7 @@ async function loadDemoByNumber(demoNum) {
       pad: pat.pad || new Array(64).fill(''),
       arp: pat.arp || new Array(64).fill(''),
       arpChords: pat.arpChords || new Array(64).fill(null),
+      strings: pat.strings || new Array(64).fill(false),
       mix: pat.mix || new Array(64).fill(null),
       velocity: pat.velocity || {
         bass: new Array(64).fill(0.8),
@@ -8574,6 +8555,14 @@ if (id === 'misc-skybox-toggle') {
   console.log('🔘 Skybox toggle clicked, now:', state.skyboxEnabled);
   applySkybox();
   updateMiscButtons();
+  return;
+}
+
+if (id === 'misc-speaker-smoke-toggle') {
+  flashButton(btn, 100, updateMiscButtons);
+  state.speakerSmokeRingsOn = !state.speakerSmokeRingsOn;
+  updateMiscButtons();
+  showMessage(state.speakerSmokeRingsOn ? '💨 SMOKE RINGS ON' : '💨 SMOKE RINGS OFF');
   return;
 }
 
@@ -13057,6 +13046,87 @@ AFRAME.registerComponent('rave-smoke-drift', {
   }
 });
 
+// Rainbow smoke rings: bigger, less translucent, cycle ROYGBIV as they blow out and grow
+function hslToHex(h, s, l) {
+  h = h / 360; s = s / 100; l = l / 100;
+  var r, g, b;
+  if (s === 0) { r = g = b = l; } else {
+    var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    var p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1/3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1/3);
+  }
+  return '#' + [r,g,b].map(function(x){ var n = Math.round(x*255); return (n<16?'0':'')+n.toString(16); }).join('');
+}
+function hue2rgb(p, q, t) { if (t < 0) t += 1; if (t > 1) t -= 1; if (t < 1/6) return p + (q - p) * 6 * t; if (t < 1/2) return q; if (t < 2/3) return p + (q - p) * (2/3 - t) * 6; return p; }
+
+// Rainbow hue steps: red 0, orange 40, yellow 60, green 120, blue 240, violet 280 (cycle)
+var RAINBOW_HUES = [0, 40, 60, 120, 240, 280];
+
+AFRAME.registerComponent('speaker-smoke-rings', {
+  schema: { numRings: { default: 6 }, emitEverySteps: { default: 24 }, emitChance: { default: 0.45 } },
+  init: function () {
+    var data = this.data;
+    this.rings = [];
+    this.rainbowIndex = 0;
+    this._lastEmitStep = -1;
+    for (var i = 0; i < data.numRings; i++) {
+      var ring = document.createElement('a-ring');
+      ring.setAttribute('radius-inner', '0.08');
+      ring.setAttribute('radius-outer', '0.11');
+      ring.setAttribute('position', '0 0 0.16');
+      ring.setAttribute('rotation', '0 0 0');
+      ring.setAttribute('visible', 'false');
+      ring.setAttribute('material', 'transparent:true;opacity:0.55;side:double;depthWrite:false');
+      this.el.appendChild(ring);
+      this.rings.push({ el: ring, z: 0.16, scale: 0.7, opacity: 0, hue: 0, active: false });
+    }
+  },
+  tick: function (time, timeDelta) {
+    var isPlaying = typeof state !== 'undefined' && state.isPlaying;
+    var smokeOn = typeof state !== 'undefined' && state.speakerSmokeRingsOn;
+    if (!isPlaying || !smokeOn) {
+      this._lastEmitStep = -1;
+      return;
+    }
+    var data = this.data;
+    var step = state.currentStep;
+    var emitEvery = data.emitEverySteps || 24;
+    var chance = typeof data.emitChance === 'number' ? data.emitChance : 0.45;
+    if (step !== this._lastEmitStep && step % emitEvery === 0 && Math.random() < chance) {
+      this._lastEmitStep = step;
+      var r = this.rings.find(function (x) { return !x.active; });
+      if (r) {
+        r.active = true;
+        r.z = 0.16;
+        r.scale = 0.7;
+        r.opacity = 0.55;
+        r.hue = RAINBOW_HUES[this.rainbowIndex % RAINBOW_HUES.length];
+        this.rainbowIndex++;
+        r.el.setAttribute('visible', 'true');
+        r.el.setAttribute('position', '0 0 ' + r.z);
+        r.el.setAttribute('scale', r.scale + ' ' + r.scale + ' 1');
+        r.el.setAttribute('material', 'transparent:true;opacity:' + r.opacity + ';side:double;depthWrite:false;color:' + hslToHex(r.hue, 85, 70));
+      }
+    }
+    this.rings.forEach(function (r) {
+      if (!r.active) return;
+      r.z += 0.006;
+      r.scale += 0.014;
+      r.opacity -= 0.0035;
+      if (r.opacity <= 0) {
+        r.active = false;
+        r.el.setAttribute('visible', 'false');
+        return;
+      }
+      r.el.setAttribute('position', '0 0 ' + r.z);
+      r.el.setAttribute('scale', r.scale + ' ' + r.scale + ' 1');
+      r.el.setAttribute('material', 'transparent:true;opacity:' + Math.max(0, r.opacity).toFixed(3) + ';side:double;depthWrite:false;color:' + hslToHex(r.hue, 85, 70));
+    });
+  }
+});
+
 // MAIN SEQUENCER LOOP COMPONENT
 // MAIN SEQUENCER LOOP COMPONENT
 AFRAME.registerComponent('sequencer-loop', {
@@ -13356,19 +13426,23 @@ async function loadSkyboxesFromGitHub() {
     const files = await response.json();
     console.log(`📁 GitHub API returned ${files.length} items`);
     
-    // Filter for JPEG files (case-insensitive)
-    const jpegFiles = files.filter(file => 
+    // Filter for JPEG/PNG files (case-insensitive)
+    const imageFiles = files.filter(file => 
       file.type === 'file' && 
-      (file.name.toLowerCase().endsWith('.jpeg') || file.name.toLowerCase().endsWith('.jpg'))
+      (file.name.toLowerCase().endsWith('.jpeg') || file.name.toLowerCase().endsWith('.jpg') || file.name.toLowerCase().endsWith('.png'))
     );
     
     // Sort alphabetically for consistent ordering
-    jpegFiles.sort((a, b) => a.name.localeCompare(b.name));
+    imageFiles.sort((a, b) => a.name.localeCompare(b.name));
     
-    console.log(`✅ Found ${jpegFiles.length} JPEG skybox files:`, jpegFiles.map(f => f.name));
+    // Skip first 3 files in folder - they are not skyboxes
+    const SKIP_SKYBOX_FILES = 3;
+    const jpegFiles = imageFiles.length <= SKIP_SKYBOX_FILES ? [] : imageFiles.slice(SKIP_SKYBOX_FILES);
+    
+    console.log(`✅ Found ${imageFiles.length} image files, using ${jpegFiles.length} as skyboxes (skipped first ${SKIP_SKYBOX_FILES}):`, jpegFiles.map(f => f.name));
     
     if (jpegFiles.length === 0) {
-      console.warn('⚠️ No JPEG files found in GitHub repo');
+      console.warn('⚠️ No skybox images after skipping first ' + SKIP_SKYBOX_FILES);
       skyboxUrls = [];
       return 0;
     }
@@ -14213,6 +14287,7 @@ function loadFromFile(event) {
       if (typeof data.chordLineTimingIndex === 'number') state.chordLineTimingIndex = Math.max(0, data.chordLineTimingIndex);
       if (typeof data.chordLineInversionIndex === 'number') state.chordLineInversionIndex = Math.max(0, data.chordLineInversionIndex);
       if (data.miscSection === 'enviro' || data.miscSection === 'fx' || data.miscSection === 'general') state.miscSection = data.miscSection;
+      if (typeof data.speakerSmokeRingsOn !== 'undefined') state.speakerSmokeRingsOn = data.speakerSmokeRingsOn;
       if (typeof data.midiOutEnabled !== 'undefined') state.midiOutEnabled = data.midiOutEnabled;
       if (typeof data.lightingEnabled !== 'undefined') state.lightingEnabled = data.lightingEnabled;
       if (typeof data.tableVisible !== 'undefined') state.tableVisible = data.tableVisible;
@@ -14984,6 +15059,7 @@ function buildMiscPage() {
   (function(){ const b = createButton(miscUI, 0.52, R1, z, 0.28, h, d, '#88AA55', 'misc-desktop-toggle', 'DESKTOP', 'white', true); if (b) b.dataset.section = 'enviro'; })();
   (function(){ const b = createButton(miscUI, 0.84, R1, z, 0.28, h, d, '#ff00e5', 'misc-rave-toggle', 'RAVE', 'white', true); if (b) b.dataset.section = 'enviro'; })();
   (function(){ const b = createButton(miscUI, 1.16, R1, z, 0.24, h, d, '#FF5588', 'misc-lighting-rand', 'RAND', 'white', true); if (b) b.dataset.section = 'enviro'; })();
+  (function(){ const b = createButton(miscUI, -1.0, R2, z, 0.36, h, d, '#AA7788', 'misc-speaker-smoke-toggle', 'SMOKE RINGS', 'white', true); if (b) b.dataset.section = 'enviro'; })();
 
   // ═══ FX PAGE: Echo, Reverb, Chorus, Arp, Scale, 6/8, Chord ═══
   (function(){ const b = createButton(miscUI, -1.2, R1, z, 0.28, h, d, '#AA55DD', 'misc-echo-toggle', 'ECHO', 'white', true); if (b) b.dataset.section = 'fx'; })();
@@ -15578,6 +15654,21 @@ function updateMiscButtons() {
       raveBtn.setAttribute('color', '#ff00e5');
       raveBtn.setAttribute('material', 'metalness:.3;roughness:.6;emissive:#000;emissiveIntensity:0');
       raveBtn.setAttribute('scale', '1 1 1');
+      if (label) label.setAttribute('color', 'white');
+    }
+  }
+  const smokeBtn = document.getElementById('misc-speaker-smoke-toggle');
+  if (smokeBtn) {
+    const label = smokeBtn.querySelector('a-text');
+    if (state.speakerSmokeRingsOn) {
+      smokeBtn.setAttribute('color', '#00CC99');
+      smokeBtn.setAttribute('material', 'metalness:.3;roughness:.6;emissive:#00CC99;emissiveIntensity:1.2');
+      smokeBtn.setAttribute('scale', '1.08 1.08 1.08');
+      if (label) label.setAttribute('color', '#000000');
+    } else {
+      smokeBtn.setAttribute('color', '#AA7788');
+      smokeBtn.setAttribute('material', 'metalness:.3;roughness:.6;emissive:#000;emissiveIntensity:0');
+      smokeBtn.setAttribute('scale', '1 1 1');
       if (label) label.setAttribute('color', 'white');
     }
   }
